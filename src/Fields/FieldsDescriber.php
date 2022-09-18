@@ -1,10 +1,10 @@
 <?php
-namespace Laraveldaily\Quickadmin\Fields;
+namespace Wabasta\PanelBuilder\Fields;
 
 class FieldsDescriber
 {
     /**
-     * Default QuickAdmin field types
+     * Default PanelBuilder field types
      * @return array
      */
     public static function types()
@@ -27,15 +27,15 @@ class FieldsDescriber
     }
 
     /**
-     * Default QuickAdmin field validation types
+     * Default PanelBuilder field validation types
      * @return array
      */
     public static function validation()
     {
         return [
-            'optional'        => trans('quickadmin::strings.optional'),
-            'required'        => trans('quickadmin::strings.required'),
-            'required|unique' => trans('quickadmin::strings.required_unique')
+            'optional'        => trans('panelbuilder::strings.optional'),
+            'required'        => trans('panelbuilder::strings.required'),
+            'required|unique' => trans('panelbuilder::strings.required_unique')
         ];
     }
 
@@ -51,7 +51,7 @@ class FieldsDescriber
     }
 
     /**
-     * Default QuickAdmin field types for migration
+     * Default PanelBuilder field types for migration
      * @return array
      */
     public static function migration()
@@ -74,14 +74,14 @@ class FieldsDescriber
     }
 
     /**
-     * Default QuickAdmin state for checkbox
+     * Default PanelBuilder state for checkbox
      * @return array
      */
     public static function default_cbox()
     {
         return [
-            'false' => trans('quickadmin::strings.default_unchecked'),
-            'true'  => trans('quickadmin::strings.default_checked'),
+            'false' => trans('panelbuilder::strings.default_unchecked'),
+            'true'  => trans('panelbuilder::strings.default_checked'),
         ];
     }
 }

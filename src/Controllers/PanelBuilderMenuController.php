@@ -1,26 +1,26 @@
 <?php
-namespace Laraveldaily\Quickadmin\Controllers;
+namespace Wabasta\PanelBuilder\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Role;
+use App\Models\Role;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Validator;
-use Laraveldaily\Quickadmin\Builders\ControllerBuilder;
-use Laraveldaily\Quickadmin\Builders\MigrationBuilder;
-use Laraveldaily\Quickadmin\Builders\ModelBuilder;
-use Laraveldaily\Quickadmin\Builders\RequestBuilder;
-use Laraveldaily\Quickadmin\Builders\ViewsBuilder;
-use Laraveldaily\Quickadmin\Cache\QuickCache;
-use Laraveldaily\Quickadmin\Fields\FieldsDescriber;
-use Laraveldaily\Quickadmin\Models\Menu;
+use Wabasta\PanelBuilder\Builders\ControllerBuilder;
+use Wabasta\PanelBuilder\Builders\MigrationBuilder;
+use Wabasta\PanelBuilder\Builders\ModelBuilder;
+use Wabasta\PanelBuilder\Builders\RequestBuilder;
+use Wabasta\PanelBuilder\Builders\ViewsBuilder;
+use Wabasta\PanelBuilder\Cache\QuickCache;
+use Wabasta\PanelBuilder\Fields\FieldsDescriber;
+use Wabasta\PanelBuilder\Models\Menu;
 
-class QuickadminMenuController extends Controller
+class PanelBuilderMenuController extends Controller
 {
 
     /**
-     * Quickadmin menu list page
+     * PanelBuilder menu list page
      * @return \BladeView|bool|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
@@ -34,7 +34,7 @@ class QuickadminMenuController extends Controller
     }
 
     /**
-     * Rearrange quickadmin menu items
+     * Rearrange panelbuilder menu items
      *
      * @param Request $request
      *
@@ -197,7 +197,7 @@ class QuickadminMenuController extends Controller
         // Destroy our cache file
         $cache->destroy('fieldsinfo');
 
-        return redirect(config('quickadmin.route'));
+        return redirect(config('panelbuilder.route'));
     }
 
     /**

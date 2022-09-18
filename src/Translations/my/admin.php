@@ -6,7 +6,7 @@ return [
     'dashboard-title'                       => 'Selamat Datang ke Papan Pemuka',
 
     // partials-header
-    'partials-header-title'                 => 'QuickAdmin Bahasa',
+    'partials-header-title'                 => 'PanelBuilder Bahasa',
 
     // partials-sidebar
     'partials-sidebar-menu'                 => 'Menu',
@@ -16,7 +16,7 @@ return [
     'partials-sidebar-logout'               => 'Log Keluar',
 
     // partials-topbar
-    'partials-topbar-title'                 => 'QuickAdmin Bahasa',
+    'partials-topbar-title'                 => 'PanelBuilder Bahasa',
 
     // users-create
     'users-create-create_user'              => 'Cipta Pengguna',

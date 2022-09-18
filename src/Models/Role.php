@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraveldaily\Quickadmin\Models;
+namespace Wabasta\PanelBuilder\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

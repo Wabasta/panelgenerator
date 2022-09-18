@@ -1,9 +1,9 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Laraveldaily\Quickadmin\Models\Menu;
+use Wabasta\PanelBuilder\Models\Menu;
 
 class Role extends Model
 {

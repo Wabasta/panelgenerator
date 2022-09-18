@@ -1,8 +1,8 @@
 <?php
-namespace Laraveldaily\Quickadmin\Controllers;
+namespace Wabasta\PanelBuilder\Controllers;
 
+use Wabasta\PanelBuilder\Models\UsersLogs;
 use App\Http\Controllers\Controller;
-use Laraveldaily\Quickadmin\Models\UsersLogs;
 use Yajra\Datatables\Datatables;
 
 class UserActionsController extends Controller

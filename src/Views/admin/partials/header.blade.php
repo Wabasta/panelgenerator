@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>
-        {{ trans('quickadmin::admin.partials-header-title') }}
+        {{ trans('panelbuilder::admin.partials-header-title') }}
     </title>
 
     <meta http-equiv="X-UA-Compatible"
@@ -18,15 +18,15 @@
           rel="stylesheet"
           type="text/css"/>
     <link rel="stylesheet"
-          href="{{ url('quickadmin/css') }}/font-awesome.min.css"/>
+          href="{{ url('panelbuilder/css') }}/font-awesome.min.css"/>
     <link rel="stylesheet"
-          href="{{ url('quickadmin/css') }}/bootstrap.min.css"/>
+          href="{{ url('panelbuilder/css') }}/bootstrap.min.css"/>
     <link rel="stylesheet"
-          href="{{ url('quickadmin/css') }}/components.css"/>
+          href="{{ url('panelbuilder/css') }}/components.css"/>
     <link rel="stylesheet"
-          href="{{ url('quickadmin/css') }}/quickadmin-layout.css"/>
+          href="{{ url('panelbuilder/css') }}/panelbuilder-layout.css"/>
     <link rel="stylesheet"
-          href="{{ url('quickadmin/css') }}/quickadmin-theme-default.css"/>
+          href="{{ url('panelbuilder/css') }}/panelbuilder-theme-default.css"/>
     <link rel="stylesheet"
           href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet"

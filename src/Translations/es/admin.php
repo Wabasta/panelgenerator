@@ -6,7 +6,7 @@ return [
     'dashboard-title'                       => 'Bienvenido al panel de control de tu proyecto',
 
     // partials-header
-    'partials-header-title'                 => 'QuickAdmin es',
+    'partials-header-title'                 => 'PanelBuilder es',
 
     // partials-sidebar
     'partials-sidebar-menu'                 => 'Menú',
@@ -16,7 +16,7 @@ return [
     'partials-sidebar-logout'               => 'Salir',
 
     // partials-topbar
-    'partials-topbar-title'                 => 'QuickAdmin es',
+    'partials-topbar-title'                 => 'PanelBuilder es',
 
     // users-create
     'users-create-create_user'              => 'Crear usuario',

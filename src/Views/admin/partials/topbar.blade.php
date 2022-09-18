@@ -2,8 +2,8 @@
     <div class="page-header-inner">
         <div class="page-header-inner">
             <div class="navbar-header">
-                <a href="{{ url(config('quickadmin.homeRoute')) }}" class="navbar-brand">
-                    {{ trans('quickadmin::admin.partials-topbar-title') }}
+                <a href="{{ url(config('panelbuilder.homeRoute')) }}" class="navbar-brand">
+                    {{ trans('panelbuilder::admin.partials-topbar-title') }}
                 </a>
             </div>
             <a href="javascript:;"

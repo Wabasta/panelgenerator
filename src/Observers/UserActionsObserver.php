@@ -1,9 +1,9 @@
 <?php
 
-namespace Laraveldaily\Quickadmin\Observers;
+namespace Wabasta\PanelBuilder\Observers;
 
 use Auth;
-use Laraveldaily\Quickadmin\Models\UsersLogs;
+use Wabasta\PanelBuilder\Models\UsersLogs;
 
 class UserActionsObserver
 {

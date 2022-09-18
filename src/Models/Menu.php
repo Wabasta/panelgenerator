@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraveldaily\Quickadmin\Models;
+namespace Wabasta\PanelBuilder\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
@@ -34,7 +34,7 @@ class Menu extends Model
      */
     public function children()
     {
-        return $this->hasMany('Laraveldaily\Quickadmin\Models\Menu', 'parent_id', 'id')->orderBy('position');
+        return $this->hasMany('Wabasta\PanelBuilder\Models\Menu', 'parent_id', 'id')->orderBy('position');
     }
 
     public function roles()

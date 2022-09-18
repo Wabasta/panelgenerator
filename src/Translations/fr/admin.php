@@ -6,7 +6,7 @@ return [
     'dashboard-title'                       => 'Bienvenue sur votre Tableau de Bord',
 
     // partials-header
-    'partials-header-title'                 => 'QuickAdmin fr',
+    'partials-header-title'                 => 'PanelBuilder fr',
 
     // partials-sidebar
     'partials-sidebar-menu'                 => 'Menu',
@@ -16,7 +16,7 @@ return [
     'partials-sidebar-logout'               => 'Déconnexion',
 
     // partials-topbar
-    'partials-topbar-title'                 => 'QuickAdmin fr',
+    'partials-topbar-title'                 => 'PanelBuilder fr',
 
     // users-create
     'users-create-create_user'              => 'Créer un utilisateur',

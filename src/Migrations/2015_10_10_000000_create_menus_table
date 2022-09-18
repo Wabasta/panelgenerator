@@ -22,6 +22,7 @@ class CreateMenusTable extends Migration
             $table->integer('parent_id')->nullable();
             $table->string('roles')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

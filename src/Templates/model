@@ -3,7 +3,7 @@
 namespace $NAMESPACE$;
 
 use Illuminate\Database\Eloquent\Model;
-use Laraveldaily\Quickadmin\Observers\UserActionsObserver;
+use Wabasta\PanelBuilder\Observers\UserActionsObserver;
 $PASSWORDHASH_CALL$
 $DATEPICKERS_CALL$
 $SOFT_DELETE_CALL$

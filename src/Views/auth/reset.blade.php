@@ -4,11 +4,11 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">{{ trans('quickadmin::auth.reset-reset_password') }}</div>
+                <div class="panel-heading">{{ trans('panelbuilder::auth.reset-reset_password') }}</div>
                 <div class="panel-body">
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">
-                            <strong>{{ trans('quickadmin::auth.whoops') }}</strong> {{ trans('quickadmin::auth.some_problems_with_input') }}
+                            <strong>{{ trans('panelbuilder::auth.whoops') }}</strong> {{ trans('panelbuilder::auth.some_problems_with_input') }}
                             <br><br>
                             <ul>
                                 @foreach ($errors->all() as $error)
@@ -28,7 +28,7 @@
                         <input type="hidden" name="token" value="{{ $token }}">
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label">{{ trans('quickadmin::auth.reset-email') }}</label>
+                            <label class="col-md-4 control-label">{{ trans('panelbuilder::auth.reset-email') }}</label>
 
                             <div class="col-md-6">
                                 <input type="email"
@@ -39,7 +39,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label">{{ trans('quickadmin::auth.reset-password') }}</label>
+                            <label class="col-md-4 control-label">{{ trans('panelbuilder::auth.reset-password') }}</label>
 
                             <div class="col-md-6">
                                 <input type="password"
@@ -49,7 +49,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label">{{ trans('quickadmin::auth.reset-confirm_password') }}</label>
+                            <label class="col-md-4 control-label">{{ trans('panelbuilder::auth.reset-confirm_password') }}</label>
 
                             <div class="col-md-6">
                                 <input type="password"
@@ -63,7 +63,7 @@
                                 <button type="submit"
                                         class="btn btn-primary"
                                         style="margin-right: 15px;">
-                                    {{ trans('quickadmin::auth.reset-btnreset_password') }}
+                                    {{ trans('panelbuilder::auth.reset-btnreset_password') }}
                                 </button>
                             </div>
                         </div>

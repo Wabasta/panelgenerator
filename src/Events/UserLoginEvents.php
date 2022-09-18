@@ -1,11 +1,11 @@
 <?php
 
-namespace Laraveldaily\Quickadmin\Events;
+namespace Wabasta\PanelBuilder\Events;
 
+use Wabasta\PanelBuilder\Models\UsersLogs;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;
-use Laraveldaily\Quickadmin\Models\UsersLogs;
 
 class UserLoginEvents extends Event
 {

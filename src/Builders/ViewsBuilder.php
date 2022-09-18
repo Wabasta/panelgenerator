@@ -1,8 +1,8 @@
 <?php
-namespace Laraveldaily\Quickadmin\Builders;
+namespace Wabasta\PanelBuilder\Builders;
 
 use Illuminate\Support\Str;
-use Laraveldaily\Quickadmin\Cache\QuickCache;
+use Wabasta\PanelBuilder\Cache\QuickCache;
 
 class ViewsBuilder
 {

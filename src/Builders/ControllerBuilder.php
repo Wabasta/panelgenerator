@@ -1,9 +1,9 @@
 <?php
-namespace Laraveldaily\Quickadmin\Builders;
+namespace Wabasta\PanelBuilder\Builders;
 
 use Illuminate\Support\Str;
-use Laraveldaily\Quickadmin\Cache\QuickCache;
-use Laraveldaily\Quickadmin\Models\Menu;
+use Wabasta\PanelBuilder\Cache\QuickCache;
+use Wabasta\PanelBuilder\Models\Menu;
 
 class ControllerBuilder
 {
@@ -175,7 +175,7 @@ class ControllerBuilder
                                       . ucfirst(Str::camel($menu->name))
                                       . '::pluck("'
                                       . $field->relationship_field
-                                        //null list select values like array_values so, if you 
+                                        //null list select values like array_values so, if you
                                         //want delete one row it will not match the value with the actual id.
                                       . '", "id")->prepend(\'Please select\', 0);'
                                       . "\r\n";

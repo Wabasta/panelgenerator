@@ -1,12 +1,12 @@
 <?php
-namespace Laraveldaily\Quickadmin\Controllers;
+namespace Wabasta\PanelBuilder\Controllers;
 
 use App\Http\Controllers\Controller;
 
-class QuickadminController extends Controller
+class PanelBuilderController extends Controller
 {
     /**
-     * Show QuickAdmin dashboard page
+     * Show PanelBuilder dashboard page
      *
      * @return Response
      */

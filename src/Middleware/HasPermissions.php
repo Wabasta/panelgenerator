@@ -1,9 +1,9 @@
 <?php
 
-namespace Laraveldaily\Quickadmin\Middleware;
+namespace Wabasta\PanelBuilder\Middleware;
 
-use Closure;
 use Illuminate\Contracts\Auth\Guard;
+use Closure;
 
 class HasPermissions
 {

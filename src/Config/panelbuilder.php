@@ -30,6 +30,6 @@ return [
     'standaloneRoutes'   => false,
 
     // Used to define relationship with UserLogs
-    'userModel' => \App\User::class
+    'userModel' => \App\Models\User::class
 
 ];

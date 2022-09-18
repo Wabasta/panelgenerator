@@ -1,5 +1,5 @@
 <?php
-namespace Laraveldaily\Quickadmin\Cache;
+namespace Wabasta\PanelBuilder\Cache;
 
 use Illuminate\Filesystem\Filesystem;
 

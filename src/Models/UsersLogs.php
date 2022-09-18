@@ -1,5 +1,5 @@
 <?php
-namespace Laraveldaily\Quickadmin\Models;
+namespace Wabasta\PanelBuilder\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,6 +14,6 @@ class UsersLogs extends Model
 
     public function users()
     {
-        return $this->hasOne(config('quickadmin.userModel'), 'id', 'user_id');
+        return $this->hasOne(config('panelbuilder.userModel'), 'id', 'user_id');
     }
 }

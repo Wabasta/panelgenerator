@@ -4,10 +4,10 @@
  * Package routing file specifies all of this package routes.
  */
 
+use Wabasta\PanelBuilder\Models\Menu;
 use Illuminate\Support\Facades\View;
-use Laraveldaily\Quickadmin\Models\Menu;
 
-if (config('quickadmin.standaloneRoutes')) {
+if (config('panelbuilder.standaloneRoutes')) {
     return;
 }
 
@@ -17,8 +17,8 @@ if (Schema::hasTable('menus')) {
     if (! empty($menus)) {
         Route::group([
             'middleware' => ['web', 'auth', 'role'],
-            'prefix'     => config('quickadmin.route'),
-            'as'         => config('quickadmin.route') . '.',
+            'prefix'     => config('panelbuilder.route'),
+            'as'         => config('panelbuilder.route') . '.',
             'namespace'  => 'App\Http\Controllers',
         ], function () use ($menus) {
             foreach ($menus as $menu) {
@@ -44,65 +44,65 @@ if (Schema::hasTable('menus')) {
 }
 
 Route::group([
-    'namespace'  => 'Laraveldaily\Quickadmin\Controllers',
+    'namespace'  => 'Wabasta\PanelBuilder\Controllers',
     'middleware' => ['web', 'auth']
 ], function () {
     // Dashboard home page route
-    Route::get(config('quickadmin.homeRoute'), config('quickadmin.homeAction','QuickadminController@index'));
+    Route::get(config('panelbuilder.homeRoute'), config('panelbuilder.homeAction','PanelBuilderController@index'));
     Route::group([
         'middleware' => 'role'
     ], function () {
         // Menu routing
-        Route::get(config('quickadmin.route') . '/menu', [
+        Route::get(config('panelbuilder.route') . '/menu', [
             'as'   => 'menu',
-            'uses' => 'QuickadminMenuController@index'
+            'uses' => 'PanelBuilderMenuController@index'
         ]);
-        Route::post(config('quickadmin.route') . '/menu', [
+        Route::post(config('panelbuilder.route') . '/menu', [
             'as'   => 'menu',
-            'uses' => 'QuickadminMenuController@rearrange'
+            'uses' => 'PanelBuilderMenuController@rearrange'
         ]);
 
-        Route::get(config('quickadmin.route') . '/menu/edit/{id}', [
+        Route::get(config('panelbuilder.route') . '/menu/edit/{id}', [
             'as'   => 'menu.edit',
-            'uses' => 'QuickadminMenuController@edit'
+            'uses' => 'PanelBuilderMenuController@edit'
         ]);
-        Route::post(config('quickadmin.route') . '/menu/edit/{id}', [
+        Route::post(config('panelbuilder.route') . '/menu/edit/{id}', [
             'as'   => 'menu.edit',
-            'uses' => 'QuickadminMenuController@update'
+            'uses' => 'PanelBuilderMenuController@update'
         ]);
 
-        Route::get(config('quickadmin.route') . '/menu/crud', [
+        Route::get(config('panelbuilder.route') . '/menu/crud', [
             'as'   => 'menu.crud',
-            'uses' => 'QuickadminMenuController@createCrud'
+            'uses' => 'PanelBuilderMenuController@createCrud'
         ]);
-        Route::post(config('quickadmin.route') . '/menu/crud', [
+        Route::post(config('panelbuilder.route') . '/menu/crud', [
             'as'   => 'menu.crud.insert',
-            'uses' => 'QuickadminMenuController@insertCrud'
+            'uses' => 'PanelBuilderMenuController@insertCrud'
         ]);
 
-        Route::get(config('quickadmin.route') . '/menu/parent', [
+        Route::get(config('panelbuilder.route') . '/menu/parent', [
             'as'   => 'menu.parent',
-            'uses' => 'QuickadminMenuController@createParent'
+            'uses' => 'PanelBuilderMenuController@createParent'
         ]);
-        Route::post(config('quickadmin.route') . '/menu/parent', [
+        Route::post(config('panelbuilder.route') . '/menu/parent', [
             'as'   => 'menu.parent.insert',
-            'uses' => 'QuickadminMenuController@insertParent'
+            'uses' => 'PanelBuilderMenuController@insertParent'
         ]);
 
-        Route::get(config('quickadmin.route') . '/menu/custom', [
+        Route::get(config('panelbuilder.route') . '/menu/custom', [
             'as'   => 'menu.custom',
-            'uses' => 'QuickadminMenuController@createCustom'
+            'uses' => 'PanelBuilderMenuController@createCustom'
         ]);
-        Route::post(config('quickadmin.route') . '/menu/custom', [
+        Route::post(config('panelbuilder.route') . '/menu/custom', [
             'as'   => 'menu.custom.insert',
-            'uses' => 'QuickadminMenuController@insertCustom'
+            'uses' => 'PanelBuilderMenuController@insertCustom'
         ]);
 
-        Route::get(config('quickadmin.route') . '/actions', [
+        Route::get(config('panelbuilder.route') . '/actions', [
             'as'   => 'actions',
             'uses' => 'UserActionsController@index'
         ]);
-        Route::get(config('quickadmin.route') . '/actions/ajax', [
+        Route::get(config('panelbuilder.route') . '/actions/ajax', [
             'as'   => 'actions.ajax',
             'uses' => 'UserActionsController@table'
         ]);

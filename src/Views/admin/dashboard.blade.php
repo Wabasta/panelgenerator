@@ -2,6 +2,6 @@
 
 @section('content')
 
-    {{ trans('quickadmin::admin.dashboard-title') }}
+    {{ trans('panelbuilder::admin.dashboard-title') }}
 
 @endsection

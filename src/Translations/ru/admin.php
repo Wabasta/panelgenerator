@@ -5,7 +5,7 @@ return [
   'dashboard-title' => 'Добро пожаловать',
 
   // partials-header
-  'partials-header-title' => 'QuickAdmin рус',
+  'partials-header-title' => 'PanelBuilder рус',
 
   // partials-sidebar
   'partials-sidebar-menu' => 'Меню',
@@ -14,7 +14,7 @@ return [
   'partials-sidebar-logout' => 'Выйти',
 
   // partials-topbar
-  'partials-topbar-title' => 'QuickAdmin рус',
+  'partials-topbar-title' => 'PanelBuilder рус',
 
   // users-create
   'users-create-create_user' => 'Создать пользователя',
